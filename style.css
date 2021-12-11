@@ -1,18 +1,80 @@
 .nav-list {
-    font-size: 0;
-    white-space: nowrap;
-
+  font-size: 0;
+  white-space:nowrap;
+  font-family: sans-serif;
 }
-ul > li {
-    background-color: #e64a19;
-    list-style: none;
-    display: inline-block;
-    font-size: 16px;
-    padding: 10px 5px;
-    color: white;
 
+.list-item {
+  display: inline-block;
+  list-style-type: none;
+  font-size: 16px;
+  color: white;
+  position: relative;
+  background-color: #e64a19;
 }
-.link {
-    color: inherit;
-    text-decoration: none;
+
+
+
+.link ,.link1 {
+  color: inherit;
+  text-decoration: none;
+
+  padding: 10px;
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+
+.sub-nav-list {
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: none;
+  padding: 0;
+}
+
+
+.sub-nav-list1 {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  padding: 0;
+  display: none;
+  
+}
+
+
+.sub-list-item {
+  display: block;
+}
+
+/* .sub-list-item .link1{
+  padding: 10px 0;
+} */
+
+.list-item:hover > .sub-nav-list {
+  display: block;
+}
+
+.sub-list-item:hover > .sub-nav-list1 {
+      display: inherit;
+}
+.list-item:hover {
+  background-color: #8a2d0f;
+
+  
+}
+.sub-nav-list2 {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  padding: 0;
+  display: none;
+  }
+
+.sub-nav-list1:hover > .sub-nav-list2 {
+  display: block;
+
 }
